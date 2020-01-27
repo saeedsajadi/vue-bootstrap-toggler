@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var VueLoaderPlugin = require('vue-loader/lib/plugin')
 
+
 module.exports = {
   devtool: 'source-map',
   entry: './src/index.vue',

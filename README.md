@@ -4,8 +4,10 @@
 
 
 
-### Use
+### Requirements
 
+- npm
+- Vue.js
 
 
 ### Full example

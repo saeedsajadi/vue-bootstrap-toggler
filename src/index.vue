@@ -1,4 +1,5 @@
 <template>
+
     <div @click="update()" class="toggle btn btn-default" :class="{ 'off': (! value), 'disabled':disabled }" data-toggle="toggle">
         <div class="toggle-group">
             <label class="btn btn-primary toggle-on">{{ this.on }}</label>
@@ -6,9 +7,11 @@
             <span class="toggle-handle btn btn-default"></span>
         </div>
     </div>
+
 </template>
 
 <script>
+
     export default {
         props: {
             options: {
@@ -55,6 +58,7 @@
             }
         }
     }
+    
 </script>
 
 <style lang="css" src="../css/bootstrap-toggle.css"/>
