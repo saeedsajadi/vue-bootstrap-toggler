@@ -1,5 +1,5 @@
 {
-  "name": "vue-bootstrap-toggler",
+  "name": "vue-bootstrap-toggler-with-input",
   "version": "0.0.2",
   "description": "A VueJS implementation with a basic Bootstrap Toggle button.",
   "main": "dist/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daniel-rees/vue-bootstrap-toggler.git"
+    "url": "git+https://github.com/saeedsajadi/vue-bootstrap-toggler.git"
   },
   "keywords": [
     "vuejs",
@@ -20,12 +20,12 @@
     "toggle",
     "toggler"
   ],
-  "author": "https://github.com/daniel-rees",
+  "author": "https://github.com/saeedsajadi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/daniel-rees/vue-bootstrap-toggler/issues"
+    "url": "https://github.com/saeedsajadi/vue-bootstrap-toggler/issues"
   },
-  "homepage": "https://github.com/daniel-rees/vue-bootstrap-toggler#readme",
+  "homepage": "https://github.com/saeedsajadi/vue-bootstrap-toggler#readme",
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.2.10",
