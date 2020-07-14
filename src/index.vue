@@ -52,7 +52,10 @@
         },
 
         mounted() {
-            this.value = this.initialValue;
+            if(this.initialValue == '1' || this.initialValue === true){
+                this.value = true;
+            }
+            this.value = false;
         },
 
         methods: {
