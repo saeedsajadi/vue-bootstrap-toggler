@@ -14,7 +14,7 @@ A simple Vue.js component to add a bootstrap style toggle. Using Vue data bindin
 Install with [npm](https://www.npmjs.com/get-npm)
 
 ```
-npm install --save-dev vue-bootstrap-toggler
+npm install --save-dev vue-bootstrap-toggler-with-input
 ```
 
 ----
@@ -23,7 +23,9 @@ npm install --save-dev vue-bootstrap-toggler
 ```
 <template>
     <div>
-        <vue-bootstrap-toggler :options="{ on: 'Yiss', off: 'Nah' }" :disabled="false" @update="updatedValue" initialValue="toggleValue"></vue-bootstrap-toggler>
+        <vue-bootstrap-toggler :options="{ on: 'Yiss', off: 'Nah' }" :disabled="false" @update="updatedValue" 
+        name="input_name"
+        initialValue="toggleValue"></vue-bootstrap-toggler>
     </div>
 </template>
 
