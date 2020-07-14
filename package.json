@@ -1,6 +1,6 @@
 {
   "name": "vue-bootstrap-toggler-with-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A VueJS implementation with a basic Bootstrap Toggle button.",
   "main": "dist/index.js",
   "private": false,
