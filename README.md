@@ -30,7 +30,7 @@ npm install --save-dev vue-bootstrap-toggler-with-input
 </template>
 
 <script>
-    import vueBootstrapToggler from 'vue-bootstrap-toggler';
+    import vueBootstrapToggler from 'vue-bootstrap-toggler-with-input';
 
     export default {
         name: "YourComponentName",
