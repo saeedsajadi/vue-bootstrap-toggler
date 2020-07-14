@@ -1,10 +1,11 @@
 <template>
 
-    <div @click="update()" class="toggle btn btn-default" :class="{ 'off': (! value), 'disabled':disabled }" :style="{ 'width': w, 'height': h }">
+    <div @click="update()" class="toggle btn btn-default" :class="{ 'off': (! value), 'disabled':disabled }" data-toggle="toggle">
         <div class="toggle-group">
             <label class="btn btn-primary toggle-on">{{ this.on }}</label>
             <label class="btn btn-default active toggle-off">{{ this.off }}</label>
             <span class="toggle-handle btn btn-default"></span>
+            <input type="hidden" :name="name" :value="(value)?1:0">
         </div>
     </div>
 
@@ -27,6 +28,11 @@
             initialValue: {
                 type: Boolean,
                 default: false,
+            },
+
+            name: {
+                type: String,
+                default: ""
             }
         },
 
@@ -40,19 +46,9 @@
             on() {
                 return (this.options.on != null) ? this.options.on : 'On';
             },
-
             off() {
                 return (this.options.off != null) ? this.options.off : 'Off';
-            },
-
-            w() {
-                return (this.options.w != null) ? this.options.w.replace("px", "") + 'px' : 'auto';
-            },
-
-            h() {
-                return (this.options.h != null) ? this.options.h.replace("px", "") + 'px' : 'auto';
             }
-
         },
 
         mounted() {
