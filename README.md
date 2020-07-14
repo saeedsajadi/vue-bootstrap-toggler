@@ -25,7 +25,7 @@ npm install --save-dev vue-bootstrap-toggler-with-input
     <div>
         <vue-bootstrap-toggler :options="{ on: 'Yiss', off: 'Nah' }" :disabled="false" @update="updatedValue" 
         name="input_name"
-        initialValue="toggleValue"></vue-bootstrap-toggler>
+        initial-value="toggleValue"></vue-bootstrap-toggler>
     </div>
 </template>
 
