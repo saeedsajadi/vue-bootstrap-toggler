@@ -5,7 +5,7 @@
             <label class="btn btn-primary toggle-on">{{ this.on }}</label>
             <label class="btn btn-default active toggle-off">{{ this.off }}</label>
             <span class="toggle-handle btn btn-default"></span>
-            <input type="hidden" :name="name" :value="(value)?1:0">
+            <input type="hidden" :name="name" :value="(value)?'1':'0'">
         </div>
     </div>
 
@@ -26,8 +26,8 @@
             },
 
             initialValue: {
-                type: Boolean,
-                default: false,
+                type: Number,
+                default: 0
             },
 
             name: {
@@ -51,11 +51,8 @@
             }
         },
 
-        mounted() {
-            if(this.initialValue == '1' || this.initialValue === true){
-                this.value = true;
-            }
-            this.value = false;
+        created() {
+            this.value = !!this.initialValue;
         },
 
         methods: {
